@@ -81,3 +81,7 @@ plot(num_firms_time$date,num_firms_time$count, type = "l")
 num_firms_time[which(num_firms_time$count == max(num_firms_time$count)),]
 num_firms_time[which(num_firms_time$count == min(num_firms_time$count)),]
 
+# obtain dates
+all_dates <- unique(df.merged$date)
+all_dates = all_dates[order(all_dates)]
+
